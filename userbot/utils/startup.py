@@ -246,7 +246,7 @@ async def verifyLoggerGroup():
                 + str(e)
             )
     else:
-        descript = "- عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @jmthon"
+        descript = "- عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @VV399"
         photobt = await jmthon.upload_file(file="Jmthon/razan/resources/start/IMG_20220112_235939_891.jpg")
         _, groupid = await create_supergroup(
             "مجموعة اشعارات ماتركس ", jmthon, Config.TG_BOT_USERNAME, descript, photobt
@@ -275,7 +275,7 @@ async def verifyLoggerGroup():
                 "⌯︙حدث استثناء عند محاولة التحقق من PM_LOGGER_GROUP_ID.\n" + str(e)
             )
     else:
-        descript = "⌯︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @JMTHON"
+        descript = "⌯︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @VV399"
         photobt = await jmthon.upload_file(file="Jmthon/razan/resources/start/IMG_20220112_235939_891.jpg")
         _, groupid = await create_supergroup(
             "مجموعة تخزين ماتركس", jmthon, Config.TG_BOT_USERNAME, descript, photobt
