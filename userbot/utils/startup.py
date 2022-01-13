@@ -65,9 +65,9 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await jmthon.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/e9cd63140ffaba419db6b.jpg",
-                caption="⌯︙**بــوت جـمـثـون يـعـمـل بـنـجـاح**  ✅ \n⌯︙**قـنـاة الـسـورس**  :  @JMTHON",
-                buttons=[(Button.url("كروب جـمثون", "https://t.me/GroupJmthon"),)],
+                "https://telegra.ph/file/04fd7ae0f3efc78f2fb10.jpg",
+                caption="⌯︙**بــوت مـاتركس يـعـمـل بـنـجـاح**  ✅ \n⌯︙**قـنـاة الـسـورس**  :  @VV399",
+                buttons=[(Button.url("كروب مـاتركـس", "https://t.me/NNN8X"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -85,7 +85,7 @@ async def startupmessage():
             message = await jmthon.get_messages(msg_details[0], ids=msg_details[1])
             text = (
                 message.text
-                + "\n\n**⌯︙اهلا وسهلا لقد قمت باعاده تشغيل بـوت جـمثون تمت بنجاح**"
+                + "\n\n**⌯︙اهلا وسهلا لقد قمت باعاده تشغيل بـوت مـاتركـس تمت بنجاح**"
             )
             await jmthon.edit_message(msg_details[0], msg_details[1], text)
             if gvarstatus("restartupdate") is not None:
@@ -249,7 +249,7 @@ async def verifyLoggerGroup():
         descript = "- عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @jmthon"
         photobt = await jmthon.upload_file(file="Jmthon/razan/resources/start/IMG_20220112_235939_891.jpg")
         _, groupid = await create_supergroup(
-            "مجموعة اشعارات جمثون ", jmthon, Config.TG_BOT_USERNAME, descript, photobt
+            "مجموعة اشعارات ماتركس ", jmthon, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("⌯︙تم إنشاء مجموعة المسـاعدة بنجاح وإضافتها إلى المتغيرات.")
@@ -278,7 +278,7 @@ async def verifyLoggerGroup():
         descript = "⌯︙ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @JMTHON"
         photobt = await jmthon.upload_file(file="Jmthon/razan/resources/start/IMG_20220112_235939_891.jpg")
         _, groupid = await create_supergroup(
-            "مجموعة التخزين", jmthon, Config.TG_BOT_USERNAME, descript, photobt
+            "مجموعة تخزين ماتركس", jmthon, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print("تـم عمـل الكروب التخزين بنـجاح واضافة الـفارات الـيه.")
