@@ -21,7 +21,7 @@ from . import AUTONAME, DEFAULT_BIO, edit_delete, jmthon, logging
 
 plugin_category = "tools"
 
-DEFAULTUSERBIO = DEFAULT_BIO or " قلوبنا مليئة برسائل ، لم تكتب "
+DEFAULTUSERBIO = DEFAULT_BIO or "اللـهـم صـبـرآً كصــبر المـسيـح.༒@VV399"
 DEFAULTUSER = AUTONAME or Config.ALIVE_NAME
 LOGS = logging.getLogger(__name__)
 
